@@ -4,7 +4,7 @@ int main(){
 
     // Variáveis da Carta 1
     char estado1;
-    char codigo1[4];
+    char codigo1[2];
     char nome_da_cidade1[50];
     int populacao1;
     float area1;
@@ -13,7 +13,7 @@ int main(){
 
     // Variáveis da Carta 2
     char estado2;
-    char codigo2[4];
+    char codigo2[2];
     char nome_da_cidade2[50];
     int populacao2;
     float area2;
@@ -23,14 +23,14 @@ int main(){
     //Entrada de dados da Carta 1
     printf("\nCadastro da Carta 1:\n");
 
-    printf("Digite o Estado de (A-H):\n");
+    printf("Digite o Estado de A-H:\n");
     scanf(" %c", &estado1);
 
-    printf("Digite o Código da Carta (ex:A01):\n");  
+    printf("Digite o Código da Carta ex:A01:\n");  
     scanf(" %s", &codigo1);
 
     printf("Digite o Nome da Cidade:\n");
-    scanf(" %[^\n]", &nome_da_cidade1);
+    scanf(" %s", &nome_da_cidade1);
 
     printf("Digite a Populacao da Cidade:\n");
     scanf(" %d", &populacao1);
@@ -47,14 +47,14 @@ int main(){
 // Entrada de dados da Carta 2
     printf("\nCadastro da Carta 2:\n");
 
-    printf("Digite o Estado (A-H): \n");
+    printf("Digite o Estado A-H: \n");
     scanf(" %c", &estado2);
 
-    printf("Digite o Código da Carta (ex:B02): \n");
+    printf("Digite o Código da Carta ex:B02 \n");
     scanf(" %s", &codigo2);
 
     printf("Digite o Nome da Cidade: \n");
-    scanf(" %[^\n]", &nome_da_cidade2);
+    scanf(" %s", &nome_da_cidade2);
 
     printf("Digite a População da Cidade: \n");
     scanf(" %d", &populacao2);
